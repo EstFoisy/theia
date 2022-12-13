@@ -37,6 +37,7 @@ export interface Decoration {
     readonly letter?: string;
     readonly tooltip?: string;
     readonly bubble?: boolean;
+    readonly icon?: string;
 }
 
 export interface ResourceDecorationChangeEvent {

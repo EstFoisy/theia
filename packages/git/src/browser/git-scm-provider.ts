@@ -214,7 +214,10 @@ export class GitScmProvider implements ScmProvider {
             decorations: {
                 letter: GitFileStatus.toAbbreviation(change.status, change.staged),
                 color: GitFileStatus.getColor(change.status, change.staged),
-                tooltip: GitFileStatus.toString(change.status)
+                tooltip: GitFileStatus.toString(change.status),
+                strikeThrough: GitFileStatus.toStrikethrough(change.status),
+                icon: GitFileStatus.toThemeIcon(change.staged),
+                iconDark: GitFileStatus.toThemeIcon(change.staged)
             },
             open: async () => this.open(change, { mode: 'reveal' })
         });
