@@ -158,17 +158,6 @@ export namespace GitFileStatus {
         return status === GitFileStatus.Deleted;
     }
 
-    export function toThemeIcon(staged?: boolean): ThemeIcon | undefined {
-        // since the icon is supposed to change with the color of the background, this is what I first thought to do, but I know it does not work
-        if (staged && editorBackground === 'light' || editorBackground === 'hclight') {
-            return ThemeIcon.fromString(codicon('globe'));
-        }
-        if (staged && editorBackground === 'dark' || editorBackground === 'hcdark') {
-            return ThemeIcon.fromString(codicon('eye'));
-        }
-
-    }
-
 }
 
 /**
