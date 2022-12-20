@@ -17,10 +17,6 @@
 import URI from '@theia/core/lib/common/uri';
 import { Path } from '@theia/core';
 import { nls } from '@theia/core/lib/common/nls';
-import { ThemeIcon } from '@theia/monaco-editor-core/esm/vs/platform/theme/common/themeService';
-import { editorBackground } from '@theia/monaco-editor-core/esm/vs/platform/theme/common/colorRegistry';
-// eslint-disable-next-line @theia/runtime-import-check
-import { codicon } from '@theia/core/lib/browser';
 
 export interface WorkingDirectoryStatus {
 
